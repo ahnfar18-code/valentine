@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Letter To You</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <canvas id="bg" aria-hidden="true"></canvas>
+  <main class="card wide">
+    <div class="badge">For you, always</div>
+    <h1 class="script">My letter to you</h1>
+
+    <section class="grid">
+      <div class="photo">
+        <img src="assets/couple.jpg" alt="Us" onerror="this.style.display='none';document.getElementById('photoFallback').style.display='block'" />
+        <div id="photoFallback" class="photo-fallback" style="display:none">
+          <p><strong>Add your photo:</strong> replace <span class="mono">assets/couple.jpg</span> with your image.</p>
+        </div>
+      </div>
+      <div class="letter">
+        <p class="stamp">Made for my favourite person in Dublin.</p>
+        <p>My love,</p>
+        <p>
+          Even though we are in different places, you are the best part of my days.
+          I miss you in all the quiet moments and I love you in all the loud ones.
+        </p>
+        <p>
+          Thank you for choosing me, for believing in us, and for making distance feel like something we can beat.
+          I am so proud of you. I am so grateful for you.
+        </p>
+        <p>
+          So here is my promise: today, this Valentine, and every day after that,
+          I will keep choosing you.
+        </p>
+        <p class="signature">Love always,<br><span class="script small">Your person</span></p>
+        <div class="actions">
+          <a class="btn primary" href="index.html">Replay</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="shared.js"></script>
+  <script src="letter.js"></script>
+</body>
+</html>
